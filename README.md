@@ -160,8 +160,9 @@ Refer the example for the playground where you can experiment with these lifecyc
 
 ## Examples
 
-- Lifecycle hooks codesandbox playground
+- [Lifecycle hooks codesandbox playground][example-playground]
 
+[example-playground]: https://codesandbox.io/s/lifecycle-hooks-playground-n6qes
 [bundle-phobia-badge]: https://badgen.net/bundlephobia/minzip/@daniakash/lifecycle-hooks
 [bundle-phobia]: https://bundlephobia.com/result?p=@daniakash/lifecycle-hooks
 [downloads-badge]: https://img.shields.io/npm/dm/@daniakash/lifecycle-hooks.svg?style=flat-square
