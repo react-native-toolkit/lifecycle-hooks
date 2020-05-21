@@ -1,6 +1,6 @@
 {
   "name": "@daniakash/lifecycle-hooks",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1-alpha-1",
   "description": "React class component lifecycle methods re-implemented as hooks",
   "scripts": {
     "prepare": "rollup -c rollup.config.js"
