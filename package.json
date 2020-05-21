@@ -1,5 +1,5 @@
 {
-  "name": "lifecycle-hooks",
+  "name": "@daniakash/lifecycle-hooks",
   "version": "0.0.1-alpha",
   "description": "React class component lifecycle methods re-implemented as hooks",
   "scripts": {
