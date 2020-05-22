@@ -23,6 +23,7 @@ Easiest way to migrate class components to hooks ✌️
 - 📦 [Installation](#installation)
 - ℹ️ [Usage](#usage)
 - 💡 [Examples](#examples)
+- 🛑 [Should you migrate class components to hooks?](#before-you-use)
 
 ## Motivation
 
@@ -161,6 +162,12 @@ Refer the example for the playground where you can experiment with these lifecyc
 ## Examples
 
 - [Lifecycle hooks codesandbox playground][example-playground]
+
+## Before you use
+
+As the [react documentation](https://reactjs.org/docs/hooks-intro.html#no-breaking-changes) says, class components aren't going away, so you probably won't have to migrate your project to functional components in most cases.
+
+But if you run into a situation like me where you need the powerful hooks from react-navigation, react-spring or any other similar library, lifecycle-hooks will make your migration a lot easier.
 
 ## Licenses
 
