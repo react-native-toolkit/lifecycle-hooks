@@ -1,23 +1,23 @@
-import { useRef, useCallback, useEffect, useReducer, Dispatch } from "react";
+import { useRef, useEffect, useReducer, Dispatch } from "react";
 
 export type callbackType = () => any;
 
 const useConstructor = (cb: callbackType = () => null) => {
   const isMounted = useRef(false);
-  const exec = useCallback(() => {
+  const exec = () => {
     if (!isMounted.current) {
       cb();
     }
     isMounted.current = true;
-  }, [cb]);
+  };
   exec();
 };
 
 const useDidMount = (cb: callbackType = () => null) => {
   useEffect(
-    useCallback(() => {
+    () => {
       cb();
-    }, [cb]),
+    },
     []
   );
 };
@@ -25,12 +25,12 @@ const useDidMount = (cb: callbackType = () => null) => {
 const useDidUpdate = (cb: callbackType = () => null) => {
   const isMounted = useRef(false);
   useEffect(
-    useCallback(() => {
+    () => {
       if (isMounted.current) {
         cb();
       }
       isMounted.current = true;
-    }, [cb])
+    }
   );
 };
 
@@ -51,9 +51,9 @@ const useState = <T extends object>(
 
 const useWillUnmount = (cb: callbackType = () => null) => {
   useEffect(
-    useCallback(() => {
+    () => {
       return () => cb();
-    }, [cb]),
+    },
     []
   );
 };
